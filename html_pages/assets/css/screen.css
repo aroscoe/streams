@@ -1,0 +1,178 @@
+/* SCREEN **************************************************/ 
+
+body {
+    background: #536c87 url("../img/bg.gif") repeat-x;
+}
+#document {
+    padding: 0 20px;
+}
+.layout_wrapper {
+    margin: 0 auto;
+    width: 962px !important;
+}
+
+/* Typography
+---------------------------------------------------------- */
+html {font-size:100.01%;}
+body {
+  font-size: 75%;
+  color: #585858;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {font-weight: normal; color: #111;}
+h1 {font-size: 2.4em; padding-top: .6em;}
+h2 {font-size: 1.5em; margin-bottom: 0.3em;}
+h3 {font-size: 1.5em; line-height: 1; margin-bottom: 1em;}
+h4 {font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em;}
+h5 {font-size: 1em; font-weight: bold; margin-bottom: 1.5em;}
+h6 {font-size: 1em; font-weight: bold;}
+
+p {font-size: 1em; margin-bottom: 1.5em;}
+a {color: #24385b;}
+
+/* Header
+---------------------------------------------------------- */
+#header {
+    height: 64px;
+}
+#header h1 {
+    font-family: Courier;
+    font-weight: normal;
+    color: #fff;
+}
+#header h1 em {
+    font-style: normal;
+    color: #faf399;
+}
+/* Add Stream */
+#add_stream {
+    float: right;
+    margin-top: -28px;
+    width: 580px;
+    height: 30px;
+/*    background: red;*/
+}
+#add_stream a {
+    float: right;
+    margin-top: 6px;
+    color: #faf399;
+    text-decoration: none;
+}
+#add_stream a span {
+    padding: 4px 6px 4px 16px;
+    background: url("../img/plus.png") no-repeat 7px 7px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+#add_stream a span em {
+    margin-left: 3px;
+    font-style: normal;
+}
+#add_stream a:hover span, #add_stream a.active span {
+    color: #313446;
+    background: #faf399 url("../img/plus.png") no-repeat 7px -17px;
+}
+#add_stream a.active:hover span {
+    background-color: #536c87 !important;
+}
+#add_stream form {
+    display: inline;
+}
+#add_stream form input {
+    display: none;
+    width: 540px;
+    padding: 2px;
+    font-size: 14px;
+    border: 1px solid #faf399;
+}
+
+/* Content
+---------------------------------------------------------- */
+#content {
+    position: relative;
+    margin: 0 auto;
+    padding: 1px;
+    background: blue;
+}
+#content .container {
+    padding: 20px 10px;
+    background-color: #fff;
+}
+
+/* Date */
+p.date {
+    
+}
+p.date span {
+    padding: 2px 6px;
+    background-color: #fefdec;
+    border: 1px solid #faf399;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+/* Feeds */
+.feed {
+    margin: 0 0 24px 20px;
+}
+.feed h2 a {
+    text-decoration: none;
+}
+
+/* Content Framing
+---------------------------------------------------------- */
+/* Corners */
+#content .tl, #content .tr, #content .bl, #content .br {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+#content .tl {top: 0; left: 0; background: url("../img/content_tl.png") no-repeat;}
+#content .tr {top: 0; right: 0; background: url("../img/content_tr.png") no-repeat;}
+#content .bl {bottom: 0; left: 0; background: url("../img/content_bl.png") no-repeat;}
+#content .br {bottom: 0; right: 0; background: url("../img/content_br.png") no-repeat;}
+
+/* Shadow Sides (top, bottom) */
+#content .st, #content .sb {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+#content .st {top: 0; background-color: #282a39;}
+#content .sb {bottom: 0; background-color: #43586e;}
+
+/* Shadow Sides (left, right) */
+#content .sl, #content .sr {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #43586e;
+}
+#content .sl {left: 0;}
+#content .sr {right: 0;}
+
+/* Shadow Panels */
+#content .sl_panel, #content .sr_panel {
+    position: absolute;
+    top: 10px;
+    width: 1px;
+    height: 28px;
+    background: url("../img/content_s_panel.png") no-repeat;
+}
+#content .sl_panel {left: 0;}
+#content .sr_panel {right: 0;}
+
+/* Footer
+---------------------------------------------------------- */
+#footer p {
+    margin-top: 10px;
+    text-align: center;
+}
+#footer a {color: #faf399;}
+#footer a:hover {color: #313446}

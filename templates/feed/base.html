@@ -1,0 +1,15 @@
+{% extends  "base.html" %}
+
+{% block content %}
+    <p class="date"><span>November 20, 2009</span></p>
+
+    {% for stream in streams %}
+        <div class="feed">
+            <h2><a href="{{feed.link}}">{{stream.title}}</a></h2>
+            {% if stream.summary %}
+                <p>{{stream.summary}}</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+{% endblock %}
